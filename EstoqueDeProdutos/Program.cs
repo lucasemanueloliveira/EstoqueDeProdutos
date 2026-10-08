@@ -2,6 +2,7 @@
 using EstoqueDeProdutos.Services;
 using System.Text.Json;
 
+//Leitura de arquivo JSON criando objeto
 string caminhoArquivo = "Dados/estoque.json";
 
 string json = File.ReadAllText(caminhoArquivo);
@@ -23,6 +24,7 @@ EstoqueService estoqueService = new EstoqueService(dados.Estoque);
 
 bool continuar = true;
 
+//Interação na tela
 while (continuar)
 {
     Console.WriteLine();
